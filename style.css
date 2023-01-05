@@ -1,0 +1,198 @@
+:root {
+    /*  COLORS */
+    --primary-color: #FD6E0A;
+    --bg-header: #FFF8F3;
+    --white: #FFFFFF;
+    --dark2: #474747;
+}
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*  header and navigation style */
+
+.header {
+    background-color: var(--bg-header);
+    background-image: url('/images/header_bg.png'), url('/images/developer.png');
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 230px 0 226px;
+}
+
+.nav-title {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    cursor: pointer;
+    list-style: none;
+}
+
+nav li:not(:last-child) {
+    color: var(--dark2);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.24px;
+}
+nav li:not(:first-child) {
+    margin-left: 50px;}
+
+nav li button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 150px;
+    height: 64px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.24px;
+    border: none;
+    border-radius: 5px;
+    padding: 18px 36px;
+}
+
+/*  banner styles */
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin: 0 226px;
+}
+
+.banner-content h3 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 61px;
+}
+
+.banner-content h1 {
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 116px;
+}
+
+.banner-content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.banner-button {
+    display: flex;
+    margin-top: 30px;
+}
+
+.banner-button-1 {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 200px;
+    height: 64px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.24px;
+    border: none;
+    border-radius: 5px;
+    padding: 17px 18px;
+}
+
+.banner-button-2 {
+    width: 160px;
+    height: 64px;
+    margin-left: 30px;
+    padding: 18px 23px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    background-color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+main {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/*  about section style */
+
+.about {
+    margin: 130px 0px 130px 0px;
+    background: var(--bg-header);
+    border-radius: 10px;
+    padding: 130px 150px;
+}
+
+.section-title,
+.section-description,
+.section-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-info li {
+    list-style: none;
+}
+
+/*  what I do style */
+
+.do {
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.do-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.do-description {
+    text-align: center;
+    margin: 0 110px 50px;
+}
+
+.do-tech {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tech-item {
+    padding: 45px;
+    box-shadow: 0px 0px 16px -5px #000000;
+}
+
+.tech-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.tech-title {
+    margin: 30px 0 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tech-description {
+    font-size: 16px;
+    font-weight: 400;
+}

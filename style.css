@@ -3,7 +3,9 @@
     --primary-color: #FD6E0A;
     --bg-header: #FFF8F3;
     --white: #FFFFFF;
+    --dark1: #181818;
     --dark2: #474747;
+    --dark3: #757575;
 }
 
 * {
@@ -140,9 +142,16 @@ main {
     padding: 130px 150px;
 }
 
-.section-title,
-.section-description,
-.section-info {
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--dark1);
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+}
+
+.section-description {
     text-align: center;
     margin-bottom: 30px;
 }
@@ -150,6 +159,8 @@ main {
 .section-info {
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .section-info li {
@@ -163,10 +174,6 @@ main {
     margin-bottom: 130px;
 }
 
-.do-title {
-    text-align: center;
-    margin-bottom: 30px;
-}
 .do-description {
     text-align: center;
     margin: 0 110px 50px;
@@ -175,15 +182,13 @@ main {
 .do-tech {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .tech-item {
     padding: 45px;
-    box-shadow: 0px 0px 16px -5px #000000;
-}
-
-.tech-item:not(:last-child) {
-    margin-right: 24px;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
 }
 
 .tech-title {
@@ -195,4 +200,57 @@ main {
 .tech-description {
     font-size: 16px;
     font-weight: 400;
+}
+
+/*  resume section style */
+
+.resume-container {
+    display: flex; 
+    gap: 24px;
+    margin-top: 113px;
+}
+
+.title-heading {
+    color: var(--dark2);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.title-info:not(:last-child) {
+    border-bottom: 1px solid rgba(71, 59, 59, 0.5)
+}
+
+.info-detail {
+    color: var(--dark2);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    margin: 30px 0 10px 0;
+}
+
+.info-time {
+    color: var(--dark3);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.info-description {
+    color: var(--dark3);
+    margin: 20px 0 30px 0;
+}
+
+.resume-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 200px;
+    height: 64px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.24px;
+    border: none;
+    border-radius: 5px;
+    padding: 17px 18px;
+    margin: 50px 42% 113px;
 }

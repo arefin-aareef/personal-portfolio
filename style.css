@@ -1,7 +1,7 @@
 :root {
     /*  COLORS */
     --primary-color: #FD6E0A;
-    --bg-header: #FFF8F3;
+    --bg: #FFF8F3;
     --white: #FFFFFF;
     --dark1: #181818;
     --dark2: #474747;
@@ -13,10 +13,15 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+main {
+    width: 1140px;
+    margin: 0 auto;
+}
+
 /*  header and navigation style */
 
 .header {
-    background-color: var(--bg-header);
+    background-color: var(--bg);
     background-image: url('/images/header_bg.png'), url('/images/developer.png');
     background-repeat: no-repeat;
     background-position: right bottom, left top;
@@ -128,16 +133,13 @@ nav li button {
     line-height: 27px;
 }
 
-main {
-    width: 1140px;
-    margin: 0 auto;
-}
+
 
 /*  about section style */
 
 .about {
     margin: 130px 0px 130px 0px;
-    background: var(--bg-header);
+    background: var(--bg);
     border-radius: 10px;
     padding: 130px 150px;
 }
@@ -242,15 +244,44 @@ main {
 }
 
 .resume-button {
-    background-color: var(--primary-color);
-    color: var(--white);
-    width: 200px;
-    height: 64px;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 27.24px;
-    border: none;
-    border-radius: 5px;
-    padding: 17px 18px;
-    margin: 50px 42% 113px;
+    text-align: center;
+    margin: 50px 0 113px 0;
+}
+
+/*  contact style added */
+
+footer {
+    background: var(--bg);
+}
+
+.contact {
+    display: flex;
+    gap: 100px;
+    margin: 0 240px;
+}
+
+.contact-info {
+    margin: 130px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+.contact-info a img {
+    margin-right: 24px;
+}
+
+.contact .section-title {
+    text-align: left;
+}
+
+.contact input[type="text"], input[type="email"], textarea {
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+
+.contact-description {
+    margin-bottom: 30px;
 }

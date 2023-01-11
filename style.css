@@ -27,6 +27,32 @@ main {
     background-position: right bottom, left top;
 }
 
+.header:hover .banner-greeting {
+    transform: translateX(25px);
+    transition: transform .5s ease-out 0s;
+}
+
+.header:hover .banner-header {
+    transform: translateX(25px);
+    transition: transform .5s ease-out .5s;
+}
+
+.header:hover .banner-description {
+    transform: translateX(25px);
+    transition: transform .5s ease-out 1s;
+}
+
+.header:hover .banner-button {
+    transform: translateX(25px);
+    transition: transform .5s ease-out 1.5s;
+}
+
+.header:hover .banner-button-2 {
+    transform: scale(1.2, 1.2);
+    transition: transform .5s ease-out 2s;
+}
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -104,6 +130,7 @@ nav li button {
 .banner-button {
     display: flex;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .banner-button-1 {

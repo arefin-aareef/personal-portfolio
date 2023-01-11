@@ -28,6 +28,11 @@ button {
     cursor: pointer;
 }
 
+button:hover, input[type="submit"]:hover {
+    transform: scale(1.1, 1.1);
+    transition: transform .5s ease;
+}
+
 /*  header and navigation style */
 
 .header {
@@ -58,9 +63,13 @@ button {
 }
 
 .header:hover .banner-button-2 {
-    transform: scale(1.2, 1.2);
+    transform: rotate(1turn) scale(1.1, 1.1);
     transition: transform .5s ease-out 2s;
 }
+/* 
+.header:hover .banner-button-2:hover {
+    transform: scale(1.2, 1.2);
+} */
 
 
 nav {

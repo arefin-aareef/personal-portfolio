@@ -1,3 +1,5 @@
+/*  Variable  */
+
 :root {
     /*  COLORS */
     --primary-color: #FD6E0A;
@@ -8,14 +10,22 @@
     --dark3: #757575;
 }
 
+/*  Reset Style */
+
 * {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
+/*  Global */
+
 main {
     width: 1140px;
     margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
 }
 
 /*  header and navigation style */
@@ -130,7 +140,6 @@ nav li button {
 .banner-button {
     display: flex;
     margin-top: 30px;
-    cursor: pointer;
 }
 
 .banner-button-1 {
@@ -144,6 +153,7 @@ nav li button {
     border: none;
     border-radius: 5px;
     padding: 17px 18px;
+    cursor: pointer;
 }
 
 .banner-button-2 {

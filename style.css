@@ -345,6 +345,10 @@ footer {
         margin-right: 0;
     }
 
+    .resume-container {
+        flex-direction: column;
+    }
+
 }
 
 /*  Medium Screen  */

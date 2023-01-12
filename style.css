@@ -20,7 +20,7 @@
 /*  Global */
 
 main {
-    width: 1140px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -224,17 +224,18 @@ nav li button {
 
 .do-description {
     text-align: center;
-    margin: 0 110px 50px;
+    margin-bottom: 50px;
 }
 
 .do-tech {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     gap: 24px;
 }
 
 .tech-item {
-    padding: 45px;
+    padding: 20px;
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.6);
     border-radius: 5px;
 }
@@ -330,4 +331,32 @@ footer {
 
 .contact-description {
     margin-bottom: 30px;
+}
+
+/*  Small Screen  */
+
+@media screen and (max-width:576px) {
+    .do-tech {
+        flex-direction: column;
+    }
+
+    .do-description {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+/*  Medium Screen  */
+
+@media screen and (min-width:577px) and (max-width:992px)  {
+    .do-tech {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+.hide {
+    display: none;
 }

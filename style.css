@@ -72,7 +72,7 @@ button:hover, input[type="submit"]:hover {
 .nav {
     display: flex;
     justify-content: space-between;
-    padding: 51px 230px 0 226px;
+    padding: 51px 10% 0 10%;
 }
 
 .nav-title {
@@ -122,7 +122,8 @@ nav li button {
 .banner {
     display: flex;
     align-items: center;
-    margin: 0 226px;
+    justify-content: space-evenly;
+    margin: 0 10%;
 }
 
 .banner-content h3 {
@@ -300,9 +301,11 @@ footer {
 }
 
 .contact {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
     gap: 50px;
-    margin: 0 100px;
 }
 
 .contact-info {
@@ -464,17 +467,11 @@ footer {
 @media screen and (min-width:993px) and (max-width:1200px) {
 
     .nav {
-        padding: 50px 100px;
-    }
-
-    .banner{
-        margin: 80px 0 0 0;
-        display: flex;
+        padding: 50px 10%;
     }
 
     .banner-content {
         margin-left: 100px;
-        transform: scaleX(.8);
     }
 
     .banner-child img {
